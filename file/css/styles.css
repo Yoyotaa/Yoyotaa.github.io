@@ -1,0 +1,514 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Poppins', 'Orbitron', sans-serif;
+}
+
+body {
+    /* height: auto; */
+    background-color: #ebebeb;
+    background-image: url(../images/caisse_bg.png);
+    background-repeat: no-repeat;
+    background-position: 95% 48%;
+    background-size: 30%;
+    margin: 0;
+    padding: 0;
+    color: rgb(3, 31, 109);
+}
+
+a, h2, h4, .nav-item {
+    color:rgb(3, 31, 109);
+}
+
+.gras-txt {
+    font-weight: bold;
+    color: #530000;
+}
+
+/* CAROUSEL DIAPO */
+
+
+.carousel {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 94vh;
+}
+
+.carousel-inner, .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.d-block {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+.opacity-carousel {
+    opacity: 0.6;
+}
+
+.carousel-caption {
+    color: rgb(231, 221, 80);
+    background-color: rgba(155, 177, 202, 0.226);
+    border-radius: 60px;
+    text-shadow: black 1px 1px;
+}
+
+.carousel-caption p {
+    font-size: large;
+    font-style: italic;
+}
+
+.carousel-caption h5 {
+    font-size: x-large;
+}
+
+/* ************************ */
+/* ************************ */
+/* ************************ */
+
+/* NAVBAR */
+
+.nav-link:hover {
+    color: rgba(0, 47, 175, 0.3);
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 47, 175);
+    padding: 10px 0;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    background: rgba(0, 47, 175, 0.6);
+    transition: width 200ms ease;
+}
+
+.nav-link:hover:after {
+    width: 90%;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar, .navbar1 {
+    background-color: rgba(255, 255, 255, 0.808) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.navbar {
+    border-radius: 100px;
+    width: 80%;
+    left: 10%;
+}
+
+.navbar img{
+    width: 50px;
+}
+
+.nav-item {
+    color: rgb(3, 31, 109);
+    font-weight: bold !important;
+    margin-right: 45px;
+}
+
+.navbar1 img{
+    width: 70px;
+}
+
+.navbar-collapse {
+    justify-content: center !important;
+}
+
+/* ************************ */
+/* ************************ */
+/* ************************ */
+
+/* TITRE PAGE INDEX */
+
+.present {
+    background-color: rgba(0, 0, 0, 0.418);
+    position:relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.present img {
+    width: 160px;
+}
+
+.align-title {
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+    animation: titre 2s;
+}
+
+.align-title h2 {
+    color: rgb(255, 255, 255);
+}
+
+.titre {
+    color:rgb(0, 15, 148);
+    text-shadow: rgb(255, 255, 255) 3px 5px 5px;
+    font-family: sans-serif;
+    font-size: 120px;
+}
+
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* FIN TITRE */
+/* ********* */
+
+/* CORPS PAGE */
+
+.premier-titre {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.premier-titre h2 {
+    font-size: 330%;
+}
+
+.presentation img {
+    width: 200px;
+    float: left;
+    margin-top: 100px;
+    margin-right: 35px;
+    border-radius: 50%;
+    transition: ease-out 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.presentation img:hover {
+    border-radius: 20%;
+    margin-left: 90px;
+    transform: scale(1.78);
+    transition: ease-out 0.2s;
+}
+
+span.gacec {
+    font-style: italic;
+}
+
+.presentation {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgba(190, 190, 190, 0.815);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
+    transition: ease-out 0.2s;
+}
+
+.presentation:hover {
+    transform: scale(1.07);
+    transition: ease-out 0.5s;
+}
+
+.presentation p{
+    text-align: justify;
+    padding: 70px;
+    font-size: larger;
+
+}
+
+.button-fir {
+    margin-left: auto;
+}
+
+.button-fir a {
+    text-decoration: none;
+}
+
+.arrow{
+    padding-left: 48%;
+    padding-top: 40px;
+    justify-content: center;
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #686060;
+    border-right: 1px solid #686060;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* ********* */
+
+/* ********* */
+
+/* TERRAIN ACTION */
+
+.terrain_action {
+    margin-top: 30px;
+}
+
+.cf-explication {
+    margin-top: 100px;
+    display: flex;
+}
+
+.image-cf img {
+    width: 680px;
+    margin-top: 80px;
+    animation: car-animation 3s linear 0s infinite normal none;
+}
+
+.explication {
+    background-color: rgba(190, 190, 190, 0.815);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
+}
+
+.explication p{
+    text-align: justify;
+    padding: 15%;
+}
+
+.liste-actions {
+    margin-top: -80px;
+}
+
+.explication li{
+    padding-right: 15%;
+    padding-bottom: 5px;
+    margin-left: 20%;
+    font-weight: bold;
+}
+
+.bas-container {
+    margin-top: -70px;
+}
+
+/* ************** */
+
+/* FOOTER */
+
+.footer {
+    margin-top: 20px;
+    background-color:#bdbdbd;
+	animation: color-change-3x 4s linear infinite alternate both;
+}
+
+@keyframes color-change-3x {
+    0% {
+      background: #b8b8b8d3;
+    }
+    50% {
+      background: #b99191d2;
+    }
+    100% {
+        background: #8c91b1da;
+      }
+}
+
+.bottom_border {
+    text-align: center;
+    border-bottom:1px solid #975151;
+    padding-bottom:20px;
+}
+
+.social-logo img{
+    width: 100px;
+}
+
+.social-logo img:hover {
+    filter:grayscale(0.3);
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.copyright {
+    padding: 12px;
+    text-align: center;
+}
+
+.lien a{
+    text-decoration: none;
+    margin: 30px;
+}
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+    10% {
+        transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
+/* TEST ANIMATION */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ************** */
+/* ANIMATION */
+
+@keyframes car-animation{
+    0% {
+    }
+    50% {
+        transform:  translate(-5%);
+    }
+    100% {
+    }
+}
+
+
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+/* MEDIA SCREEN MAX WIDTH */
+
+@media screen and (max-height: 960px) {
+    .carousel {
+        height: 895px !important;
+    }
+
+}
+
+@media screen and (max-width: 1395px) {
+    .titre {
+        font-size: 90px;
+    }
+    .sous-titre {
+        font-size: smaller;
+    }
+    .present img {
+        width: 150px;
+    }
+    .presentation:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 927px) {
+    .titre {
+        font-size: 70px;
+    }
+    .present img {
+        width: 130px;
+    }
+    .presentation:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .titre {
+        margin-right: 0;
+    }
+    .align-title h2 {
+        margin-right: 0;
+    }
+    .present img {
+        display: none;
+    }
+    .presentation:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .titre {
+        font-size: 50px;
+    }
+    .presentation:hover {
+        transform: none;
+    }
+}
+/* ************************ */
+/* ************************ */
+
+/* ^INDEX.HTML^ */
+/* ************************ */
+/* ************************ */
