@@ -66,6 +66,13 @@
               <button type="submit">Envoyer le message</button>
             </div>
           </form>
+          <?php
+    if (isset($_POST['message'])) {
+        $retour = mail('yoann1.godard@epitech.eu', 'Envoi depuis la page Contact', $_POST['message'], 'From: webmaster@monsite.fr' . "\r\n" . 'Reply-to: ' . $_POST['email']);
+        if($retour)
+            echo '<p>Votre message a bien été envoyé.</p>';
+    }
+    ?>
         </div>
       </div>
       <div class="col-6" id="right-contacts">

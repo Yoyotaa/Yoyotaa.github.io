@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Accueil - GACEC | Fabrication & Emballages Industriels</title>
+  <head>
+        <title>Accueil - Gacec | Fabrication & Emballages Industriels</title>
         <link rel="icon" type="image/png" sizes="16x16" href="../images/logo_gacec.png">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,56 +11,83 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 
-        <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/styles.css"/>
     </head>
     <body>
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="bg-index">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="opacity-carousel">
+                <img src="../images/caisse-kit.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fabrication</h5>
+                <p>Nos caisses sont fabriquées sur mesure par nos spécialistes (à l'unité ou en série), pour tout type d'emballage.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="opacity-carousel">
+                <img src="../images/caisse-fermee.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Emballages</h5>
+                <p>Sur site client ou en nos ateliers, c'est selon vos préférences !</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="opacity-carousel">
+                <img src="../images/bg_caisses.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Livraison / Exportation</h5>
+                <p>Nous livrons nos caisses montées ou en kit. Une fois l'emballage de vos produits effectués, il est prêt à l'exportation !</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <header>
+            <nav class="navbar navbar-expand-sm bg-success fixed-top">
+              <div class="collapse navbar-collapse">
+                <a href="#" class="nav-item"><img src="../images/logo_gacec.png" alt=""></a>
+                <li class="dropdown">
+                  <a href="#premier-titre" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#premier-titre">Qui sommes-nous ?</a></li>
+                    <li><a class="dropdown-item" href="historique.html">Historique de l'entreprise</a></li>
+                  </ul>
+                </li>
+                <a href="services.html" class="nav-item nav-link">Nos services</a>
+                <a href="realisations.html" class="nav-item nav-link">Nos réalisations</a>
+                <a href="realisations.html" class="nav-item nav-link">Nos certifications</a>
+                <a href="contacts.html" class="nav-item nav-link">Nous contacter</a>
+                <a href="devis.html" class="nav-item nav-link">Demander un devis</a>
+              </div>
+            </nav>
+            <div class="present">
+              <img src="../images/logo_gacec2.png">
+              <div class="align-title">
+                <h1 class="titre">GACEC sas</h1>
+                <h2 class="sous-titre">Fabrication de Caisses en bois & Emballages Industriels</h2>
+              </div>
+            </div>
+          </header>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="opacity-carousel">
-              <img src="../images/caisse-kit.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Fabrication</h5>
-              <p>Nos caisses sont fabriquées sur mesure par nos spécialistes (à l'unité ou en série), pour tout type d'emballage.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="opacity-carousel">
-              <img src="../images/caisse-fermee.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Emballages</h5>
-              <p>Sur site client ou en nos ateliers, c'est selon vos préférences !</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="opacity-carousel">
-              <img src="../images/bg_caisses.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Livraison / Exportation</h5>
-              <p>Nous livrons nos caisses montées ou en kit. Une fois l'emballage de vos produits effectués, il est prêt à l'exportation !</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <header>
-          <nav class="navbar navbar-expand-sm bg-success fixed-top">
+        <div class="barnav">
+          <nav class="navbar1 navbar-expand-sm bg-success">
             <div class="collapse navbar-collapse">
               <a href="#" class="nav-item"><img src="../images/logo_gacec.png" alt=""></a>
               <li class="dropdown">
@@ -77,40 +104,13 @@
               <a href="devis.html" class="nav-item nav-link">Demander un devis</a>
             </div>
           </nav>
-          <div class="present">
-            <img src="../images/logo_gacec2.png">
-            <div class="align-title">
-              <h1 class="titre">GACEC sas</h1>
-              <h2 class="sous-titre">Fabrication de Caisses en bois & Emballages Industriels</h2>
-            </div>
-          </div>
-        </header>
-      </div>
-    <div class="barnav">
-      <nav class="navbar1 navbar-expand-sm bg-success">
-        <div class="collapse navbar-collapse">
-          <a href="#" class="nav-item"><img src="../images/logo_gacec.png" alt=""></a>
-          <li class="dropdown">
-            <a href="#premier-titre" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="#premier-titre">Qui sommes-nous ?</a></li>
-              <li><a class="dropdown-item" href="historique.html">Historique de l'entreprise</a></li>
-            </ul>
-          </li>
-          <a href="services.html" class="nav-item nav-link">Nos services</a>
-          <a href="realisations.html" class="nav-item nav-link">Nos réalisations</a>
-          <a href="realisations.html" class="nav-item nav-link">Nos certifications</a>
-          <a href="contacts.html" class="nav-item nav-link">Nous contacter</a>
-          <a href="devis.html" class="nav-item nav-link">Demander un devis</a>
         </div>
-      </nav>
-    </div>
-      <div class="premier-titre" id="premier-titre">
-        <h2>Bienvenue chez Gacec !</h2>
-        <h4>Qui sommes-nous ?</h4>
-      </div>
-      <div class="container">
-        <div class="row pr">
+        <div class="premier-titre" id="premier-titre">
+          <h2>Bienvenue chez Gacec !</h2>
+          <h4>Qui sommes-nous ?</h4>
+        </div>
+        <div class="container">
+          <div class="row pr">
             <div class="presentation col-xxl ">
               <div class="container">
                 <img src="../images/multi-caisse.JPG" alt="Caisses multiples">
@@ -131,58 +131,58 @@
               <span></span>
               <span></span>
             </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="terrain_action row">
-          <div class="premier-titre">
-            <h2>Où agissons-nous ?</h2>
-          </div>
-          <div class="cf-explication">
-            <div class="image-cf col-7">
-              <img src="../images/livraison.png">
-            </div>
-            <div class="explication col-5">
-              <p>Bien que le siège de Gacec se situe à Conche-en-ouches en Normandie, nous oeuvrons
-                dans <span class="gras-txt">toute la france</span>.</br>Plusieurs possibilités sont alors proposées :
-              </p>
-              <div class="liste-actions">
-                <li>Livraison de caisses montées ou en kit en France.</li>
-                <li>Emballage dans nos locaux (livraison du matériel à emballer assurée par le client).</li>
-                <li>Emballage chez le client.</li>
-              </div>
-              <div class="bas-container">
-                <p>Pour tout renseignement supplémentaire, vous pouvez vous adressez à nous directement par 
-                  téléphone ou mail (Les informations de contacts sont listées sur la page "Nous contacter",
-                  vous pouvez vous-y rendre via la barre de navigation située en haut de la page).
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="container bottom_border">
-          <div class="social">
-            <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
-            <img src="../images/logo_insta.png">
-            </a>
-          </div>
-          <div class="lien">
-            <a href="#">Accueil</a>
-            <a href="mentions.html">Conditions générales d'utilisation</a>
-            <a href="contacts.html">Contacts</a>
           </div>
         </div>
         <div class="container">
-          <div class="copyright">
-            <p>© 2022 Gacec</p>
+          <div class="terrain_action row">
+            <div class="premier-titre">
+              <h2>Où agissons-nous ?</h2>
+            </div>
+            <div class="cf-explication">
+              <div class="image-cf col-7">
+                <img src="../images/livraison.png">
+              </div>
+              <div class="explication col-5">
+                <p>Bien que le siège de Gacec se situe à Conche-en-ouches en Normandie, nous oeuvrons
+                  dans <span class="gras-txt">toute la france</span>.</br>Plusieurs possibilités sont alors proposées :
+                </p>
+                <div class="liste-actions">
+                  <li>Livraison de caisses montées ou en kit en France.</li>
+                  <li>Emballage dans nos locaux (livraison du matériel à emballer assurée par le client).</li>
+                  <li>Emballage chez le client.</li>
+                </div>
+                <div class="bas-container">
+                  <p>Pour tout renseignement supplémentaire, vous pouvez vous adressez à nous directement par 
+                    téléphone ou mail (Les informations de contacts sont listées sur la page "Nous contacter",
+                    vous pouvez vous-y rendre via la barre de navigation située en haut de la page).
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-      <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="../scripts/main.js"></script>
+        <footer class="footer">
+          <div class="container bottom_border">
+            <div class="social">
+              <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
+                <img src="../images/logo_insta.png">
+              </a>
+            </div>
+            <div class="lien">
+              <a href="#">Accueil</a>
+              <a href="mentions.html">Conditions générales d'utilisation</a>
+              <a href="contacts.html">Contacts</a>
+            </div>
+          </div>
+          <div class="container">
+            <div class="copyright">
+              <p>© 2022 Gacec</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
     </body>
 </html>
