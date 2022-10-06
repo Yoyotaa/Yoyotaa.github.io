@@ -32,7 +32,6 @@
             <a href="./realisations.html" class="nav-item nav-link">Nos réalisations</a>
             <a href="./realisations.html" class="nav-item nav-link">Nos certifications</a>
             <a href="./contacts.html" class="nav-item nav-link">Nous contacter</a>
-            <a href="./devis.html" class="nav-item nav-link">Demander un devis</a>
           </div>
         </nav>
     </div>
@@ -43,27 +42,35 @@
     </header>
     <div class="container bloc-contacts">
       <div class="col-6" id="left-contacts">
-        <h2>Envoyez-nous un message svp</h2>
+        <h2>Envoyez-nous un message</h2>
         <div class="formulaire">
-          <form action="mail.php" method="post">
+          <form action="../php/contacts.php" method="post">
             <div>
-              <label for="name">Nom :</label>
-              <input type="text" id="name" name="user_name">
+              <label for="name">Nom & Prénom *</label>
+              <input type="text" name="surname" placeholder="Nom..." autocomplete="off">
             </div>
             <div>
-              <label for="mail">Votre e-mail :</label>
-              <input type="email" id="mail" name="user_mail">
+              <label for="name">Société</label>
+              <input type="text" name="entreprise" placeholder="Si particulier, ignorez ce champs..." autocomplete="off">
             </div>
             <div>
-              <label for="sujet">Sujet :</label>
-              <input type="text" id="sujet" name="user_sujet">
+              <label for="name">Téléphone</label>
+              <input type="text" name="phone" placeholder="Fixe ou portable" autocomplete="off">
             </div>
             <div>
-              <label for="msg">Message :</label>
-              <textarea id="msg" name="user_message"></textarea>
+              <label for="mail">Votre e-mail *</label>
+              <input type="email" name="email" placeholder="exemple@mon-entreprise.fr" autocomplete="off">
+            </div>
+            <div>
+              <label for="sujet">Objet *</label>
+              <input type="text" name="subject" placeholder="Devis, informations, etc..." autocomplete="off">
+            </div>
+            <div>
+                <label for="msg">Message *</label>
+                <textarea id="msg" name="message" placeholder="Dites-nous tout..."></textarea>
             </div>
             <div class="button btn-send">
-              <button type="submit">Envoyer le message</button>
+              <button type="submit" class="btn-grad">Envoyer</button>
             </div>
           </form>
         </div>
@@ -77,8 +84,8 @@
             </div>
             <div>
               <p>Tel : 02.32.30.02.40</p>
-              <p>E-mail : gacec27@gacec.fr</p>
               <p>Fax : 02.32.30.31.79</p>
+              <p>E-mail : gacec27@gacec.fr</p>
               <p>Adresse postale : ZI Les Fontenelles, Route de Louviers,
                  27190 Conche-en-ouche
                 </p>
@@ -87,30 +94,39 @@
               <p style="font-size:larger">Directeur général :</p>
             </div>
             <div>
-              <p>E-mail : thierry.godard@gacec.fr</p>
+              <p>Thierry Godard</p>
+            </div>
+            <div class="horaires">
+              <p style="font-size:larger">Horaires :</p>
+            </div>
+            <div>
+              <p>Pour nous contacter par téléphone, nous sommes disponibles 
+                du lundi au vendredi (sauf jours fériés)</p>
+              <p>Matin: 8h00 à 12h00</p>
+              <p>Après-midi: 14h00 à 16h00</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer-contacts">
-        <div class="container bottom_border">
-          <div class="social">
-            <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
-              <img src="../images/logo_insta.png">
-            </a>
+      <footer class="footer-contacts">
+          <div class="container bottom_border">
+            <div class="social">
+              <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
+                <img src="../images/logo_insta.png">
+              </a>
+            </div>
+            <div class="lien">
+              <a href="index.html">Accueil</a>
+              <a href="mentions.html">Conditions générales d'utilisation</a>
+              <a href="contacts.html">Contacts</a>
+            </div>
           </div>
-          <div class="lien">
-            <a href="index.html">Accueil</a>
-            <a href="mentions.html">Conditions générales d'utilisation</a>
-            <a href="contacts.html">Contacts</a>
+          <div class="container">
+            <div class="copyright">
+              <p>© 2022 Gacec</p>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="copyright">
-            <p>© 2022 Gacec</p>
-          </div>
-        </div>
-    </footer>
+      </footer>
 </body>
 </html>

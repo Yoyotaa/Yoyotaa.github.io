@@ -544,6 +544,11 @@ iframe {
     transition: ease-in-out 0.1s;
 }
 
+/* linear-gradient(
+        rgba(226, 191, 220, 0.6), 
+        rgba(112, 122, 181, 0.6)
+      ),  */
+
 .head-contacts:hover {
     border-radius: 0;
     width: 90%;
@@ -559,7 +564,6 @@ iframe {
     margin-top: 20px;
     display: flex;
     text-align: center;
-    height: 400px;
 }
 
 .formulaire {
@@ -568,14 +572,30 @@ iframe {
 }
 
 .coord-align {
-    margin-top: 10px;
-    background-color: yellow ;
-    padding-top: 10px;
+    padding-top: 2%;
     height: 400px;
 }
 
+.coord {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 1em;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.coord div {
+    margin-top: 1em;
+}
+
+.coord-entp p, .coord-dg p, .horaires p {
+    color: #530000;
+    text-align: center;
+}
+
 /* .coord {
-    
+
 } */
 
 form {
@@ -583,8 +603,8 @@ form {
     margin-right: auto;
     width: 400px;
     padding: 1em;
-    border-radius: 1em;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 form div {
@@ -613,15 +633,11 @@ textarea {
     margin-left: 0.5em;
 }
 
-
-
 .footer-contacts {
-    margin-top: 100px;
+    margin-top: 20px;
     background-color:#bdbdbd;
     animation: color-change-3x 4s linear infinite alternate both;
 }
-
-
 
 /* ^^ CONTACTS ^^ */
 /* ************** */
