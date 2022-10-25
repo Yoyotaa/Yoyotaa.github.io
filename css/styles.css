@@ -890,6 +890,15 @@ textarea {
     text-align: justify;
 }
 
+.c_sei {
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+}
+
+.c_sei h2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 
 /* ^^ CERTIFICATIONS ^^ */
 
