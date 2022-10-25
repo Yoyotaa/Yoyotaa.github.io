@@ -225,8 +225,11 @@ li.dropdown {
 /* CORPS PAGE */
 
 .premier-titre {
-    padding-top: 100px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.151);
 }
 
 .premier-titre h2 {
