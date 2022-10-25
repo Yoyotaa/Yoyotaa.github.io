@@ -274,9 +274,13 @@ span.gacec {
     font-size: larger;
 }
 
+.button-fir {
+    padding-left: 80%;
+    padding-bottom: 2%;
+}
+
 .button-fir a {
     text-decoration: none;
-    margin-left: auto;
     text-align: center;
 }
 
