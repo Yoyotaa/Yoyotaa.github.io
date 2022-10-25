@@ -1,56 +1,45 @@
-<?php
-    require_once(__DIR__ . '/vendor/autoload.php');
-    use \Mailjet\Resources;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoie formulaire - Gacec</title>
+</head>
+<body>
+    <p>TEST PHP PAGE</p>
+    <a href="../html/index.html"> Retourner à l'accueil du site<br></a>
+    <a href="../html/contacts.html">Retour</a>
+    <?php
+        if (isset($_POST['message'])) {
+            $entete  = 'MIME-Version: 1.0' . "\r\n";
+            $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+            $entete .= 'From: commercial.gacec@gacec.fr' . "\r\n";
+            $entete .= 'Reply-to: ' . $_POST['email'];
 
-    define('API_PUBLIC_KEY', 'cb479649805559bb8e42cf016ad5a803');
-    define('API_PRIVATE_KEY', 'c901264efc8f08f0f07d6dc2bf2b4656');
-    $mj = new \Mailjet\Client(API_PUBLIC_KEY, API_PRIVATE_KEY,true,['version' => 'v3.1']);
+            if (!empty($_POST['entreprise'])) {
+                $entreprise = htmlspecialchars($_POST['entreprise']);
+            } else {
+                $entreprise = "Non renseigné";
+            }
+            if (!empty($_POST['phone'])) {
+                $phone = htmlspecialchars($_POST['phone']);
+            } else {
+                $phone = "Non renseigné";
+            }
 
-
-    if(!empty($_POST['surname']) && !empty($_POST['subject']) && !empty($_POST['email']) && !empty($_POST['message'])){
-        $surname = htmlspecialchars($_POST['surname']);
-        $subject = htmlspecialchars($_POST['subject']);
-        $email = htmlspecialchars($_POST['email']);
-        $message = htmlspecialchars($_POST['message']);
-        if (!empty($_POST['entreprise'])) {
-            $entreprise = htmlspecialchars($_POST['entreprise']);
-        } else {
-            $entreprise = "Champ ignoré";
-        }
-        if (!empty($_POST['phone'])) {
-            $phone = htmlspecialchars($_POST['phone']);
-        } else {
-            $phone = "Champ ignoré";
-        }
-
-        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $body = [
-            'Messages' => [
-            [
-                'From' => [
-                'Email' => "yoann.godard@epitech.eu",
-                'Name' => $surname
-                ],
-                'To' => [
-                [
-                    'Email' => "yoann1.godard@epitech.eu",
-                    'Name' => "NAME"
-                ]
-                ],
-                'Subject' => $subject,
-                'HTMLPart' => "Email expéditeur : - $email -<br>Société : $entreprise<br>Téléphone : $phone<br>
-                <br>Demande : $message",
-            ]
-            ]
-        ];
-            $response = $mj->post(Resources::$Email, ['body' => $body]);
-            $response->success();
-            echo "Email envoyé avec succès !";
-        }
-        else{
-            echo "Email non valide";
-        }
-    } else {
-        header('Location: index.html');
-        die();
+            $message = '<h1>Message envoyé depuis la page contact du site GACEC</h1>
+            <p>
+            <b>Nom / Prénom : </b>' . $_POST['surname'] .
+            '<br><b>Email : </b>' . $_POST['email'] .
+            '<br><b>Entreprise : </b>' . $entreprise .
+            '<br><b>Téléphone : </b>' . $phone .
+            '<br><br><b>Message : </b>' . htmlspecialchars($_POST['message']) .
+            '</p>';
+            $envoie = mail('commercial.gacec@gacec.fr', $_POST['subject'], $message, $entete);
+            if($envoie)
+                echo '<p>Votre message a bien été envoyé.</p>';
     }
+    ?>
+</body>
+</html>

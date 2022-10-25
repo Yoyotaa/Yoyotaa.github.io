@@ -5,7 +5,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../images/logo_gacec.png">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,32 +15,152 @@
         <link rel="stylesheet" href="../css/styles.css"/>
     </head>
     <body>
-        <div class="barnav">
-        <nav class="navbar1 navbar-expand-sm bg-success">
-          <div class="collapse navbar-collapse">
-            <a href="index.html" class="nav-item"><img src="../images/logo_gacec.png" alt=""></a>
-            <li class="dropdown">
-              <a href="./index.html" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="./index.html#premier-titre">Qui sommes-nous ?</a></li>
-                <li><a class="dropdown-item" href="./historique.html">Historique de l'entreprise</a></li>
-              </ul>
-            </li>
-            <a href="./services.html" class="nav-item nav-link">Nos services</a>
-            <a href="./realisations.html" class="nav-item nav-link">Nos réalisations</a>
-            <a href="./realisations.html" class="nav-item nav-link">Nos certifications</a>
-            <a href="./contacts.html" class="nav-item nav-link">Nous contacter</a>
-          </div>
+        <nav class="navbar navbar-expand-sm bg-success fixed-top">
+            <a href="index.html" class="nav-item"><img src="../images/logo_gacec.webp" alt="logo gacec"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse sfe" id="navbarTogglerDemo01">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html#premier-titre">Qui sommes-nous ?</a></li>
+                            <li><a class="dropdown-item" href="historique.html">Historique de l'entreprise</a></li>
+                        </ul>
+                    </li>
+                    <a href="services.html" class="nav-item nav-link">Nos services</a>
+                    <a href="realisations.html" class="nav-item nav-link">Nos réalisations</a>
+                    <a href="certifications.html" class="nav-item nav-link">Nos certifications</a>
+                    <a href="contacts.html" class="nav-item nav-link">Nous contacter</a>
+            </div>
         </nav>
-        </div>
         <div class="align-pdf container">
-        <iframe src="../doc/CGU.pdf"></iframe>
+          <div class="part-cgu border-bottom">
+            <h1>Conditions générales d'utilisation</h1>
+            <div class="container text-cgu">
+              <p>
+                En vigueur au 12/10/2022 <br><br>
+                Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet 
+                l'encadrement juridique des modalités de mise à disposition du site et des services 
+                par Gacec et de définir les conditions d’accès et d’utilisation des services par « l'Utilisateur ».<br><br>
+                Les présentes CGU sont accessibles sur le site à la rubrique «CGU».
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>Article 1 : Les mentions légales</h1>
+            <div class="container text-cgu">
+              <p>
+                L'édition du site https://www.gacec.fr/ est assurée par la Société SAS Gacec au capital de 130000 euros,
+                 immatriculée au RCS de Évreux sous le numéro 393198247, dont le siège social est situé au 
+                 ZI les Fontenelles route de Louviers 27190 Conches-en-Ouche.<br><br>
+                Numéro de téléphone: 0232300240 <br><br>
+                Adresse e-mail : thierry.godard@gacec.fr. <br><br>
+                Le Directeur de la publication est : Godard Thierry. <br><br>
+                Numéro de TVA intracommunautaire : FR63393198247 <br><br>
+                L'hébergeur du site https://www.gacec.fr/ est la société OVHCloud, dont le siège 
+                social est situé au 2 rue Kellermann - 59100 Roubaix - France, avec le numéro de téléphone : /.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 2 : Accès au site</h1>
+            <div class="container text-cgu">
+              <p>
+                Le site https://www.gacec.fr/ permet à l'Utilisateur un accès gratuit aux services suivants :<br><br>
+                Le site internet propose les services suivants : <br><br>
+                Consultation de l'entreprise, demande de rendez-vous et de devis. <br><br>
+                Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. 
+                Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, 
+                logiciels, connexion Internet, etc.) sont à sa charge.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 3 : Collecte des données</h1>
+            <div class="container text-cgu">
+              <p>
+                Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés 
+                (CNIL) dans la mesure où il ne collecte aucune donnée concernant les Utilisateurs.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 4 : Propriété intellectuelle</h1>
+            <div class="container text-cgu">
+              <p>
+                Les marques, logos, signes ainsi que tous les contenus du site (textes, images, son…) 
+                font l'objet d'une protection par le Code de la propriété intellectuelle et plus particulièrement par le droit d'auteur. <br><br>
+                L'Utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des différents contenus. 
+                Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute utilisation à des fins commerciales et 
+                publicitaires est strictement interdite. <br><br>
+                Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l’autorisation expresse de l’exploitant 
+                du site Internet constituerait une contrefaçon sanctionnée par l’article L 335-2 et suivants du Code de la propriété intellectuelle. <br><br>
+                Il est rappelé conformément à l’article L122-5 du Code de propriété intellectuelle que l’Utilisateur qui reproduit, 
+                copie ou publie le contenu protégé doit citer l’auteur et sa source.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 5 : Responsabilité</h1>
+            <div class="container text-cgu">
+              <p>
+                Les sources des informations diffusées sur le site https://www.gacec.fr/ sont réputées 
+                fiables mais le site ne garantit pas qu’il soit exempt de défauts, d’erreurs ou d’omissions. <br><br>
+                Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. 
+                Malgré des mises à jour régulières, le site https://www.gacec.fr/ ne peut être tenu responsable de la 
+                modification des dispositions administratives et juridiques survenant après la publication. De même, 
+                le site ne peut être tenue responsable de l’utilisation et de l’interprétation de l’information contenue dans ce site. <br><br>
+                Le site https://www.gacec.fr/ ne peut être tenu pour responsable d’éventuels virus qui pourraient infecter l’ordinateur ou tout matériel 
+                informatique de l’Internaute, suite à une utilisation, à l’accès, ou au téléchargement provenant de ce site. <br><br>
+                La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 6 : Liens hypertextes</h1>
+            <div class="container text-cgu">
+              <p>
+                Des liens hypertextes peuvent être présents sur le site. 
+                L’Utilisateur est informé qu’en cliquant sur ces liens, il sortira 
+                du site https://www.gacec.fr/. Ce dernier n’a pas de contrôle sur les pages web 
+                sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu border-bottom">
+            <h1>ARTICLE 7 : Cookies</h1>
+            <div class="container text-cgu">
+              <p>
+                L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut 
+                s’installer automatiquement sur son logiciel de navigation. <br><br>
+                Les cookies sont de petits fichiers stockés temporairement sur le disque dur de l’ordinateur de l’Utilisateur 
+                par votre navigateur et qui sont nécessaires à l’utilisation du site https://www.gacec.fr/. Les cookies ne contiennent 
+                pas d’information personnelle et ne peuvent pas être utilisés pour identifier quelqu’un. Un cookie contient un identifiant 
+                unique, généré aléatoirement et donc anonyme. Certains cookies expirent à la fin de la visite de l’Utilisateur, d’autres restent. <br><br>
+                L’information contenue dans les cookies est utilisée pour améliorer le site https://www.gacec.fr/. <br><br>
+                En naviguant sur le site, L’Utilisateur les accepte. <br><br>
+                L’Utilisateur pourra désactiver ces cookies par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
+              </p>
+            </div>
+          </div>
+          <div class="part-cgu last_part-cgu">
+            <h1>ARTICLE 8 : Droit applicable et juridiction compétente</h1>
+            <div class="container text-cgu">
+              <p>
+                La législation française s'applique au présent contrat. En cas d'absence de résolution amiable 
+                d'un litige né entre les parties, les tribunaux français seront seuls compétents pour en connaître. <br><br>
+                Pour toute question relative à l’application des présentes CGU, vous pouvez joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1. <br><br>
+                CGU réalisées sur http://legalplace.fr/
+              </p>
+            </div>
+          </div>
         </div>
         <footer class="footer">
         <div class="container bottom_border">
           <div class="social">
             <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
-              <img src="../images/logo_insta.png">
+              <img src="../images/logo_insta.webp">
             </a>
           </div>
           <div class="lien">
@@ -55,5 +175,6 @@
           </div>
         </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
