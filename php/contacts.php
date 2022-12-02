@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>TEST PHP PAGE</p>
-    <a href="../html/index.html"> Retourner à l'accueil du site<br></a>
+    <a href="../index.html"> Retourner à l'accueil du site<br></a>
     <a href="../html/contacts.html">Retour</a>
     <?php
         if (isset($_POST['message'])) {

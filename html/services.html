@@ -10,22 +10,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@700&family=Orbitron:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-success fixed-top">
-        <a href="index.html" class="nav-item"><img src="../images/logo_gacec.webp" alt="logo gacec"></a>
+        <a href="../index.html" class="nav-item"><img src="../images/logo_gacec.webp" alt="logo gacec"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse sfe" id="navbarTogglerDemo01">
                 <li class="dropdown">
-                    <a href="index.html" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
+                    <a href="../index.html" class="nav-item nav-link" d="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">Présentation de Gacec</a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="index.html#premier-titre">Qui sommes-nous ?</a></li>
+                        <li><a class="dropdown-item" href="../index.html#premier-titre">Qui sommes-nous ?</a></li>
                         <li><a class="dropdown-item" href="historique.html">Historique de l'entreprise</a></li>
                     </ul>
                 </li>
@@ -44,8 +44,8 @@
                     <div class="grs">
                         <p>Nous réalisons tous type de caisses à l'unité, ou en série :</p>
                     </div>
-                    <div class="ital">
-                        <p>(À vos dimension et en respectant votre cahier des charges.)</p>
+                    <div style="color: rgb(0, 13, 83); font-style:italic;">
+                        <p>(À vos dimensions et en respectant votre cahier des charges.)</p>
                     </div>
                     <div class="liste-caisses">
                         <li>Caisse bois ou contreplaqué</li>
@@ -95,7 +95,7 @@
                     </div>
                     <p>
                         Caisse constituée d'une enveloppe en carton, double ou triple cannelure (résistance au poids),
-                        avec des renforts en bois ou contre plaqué et qui peut être éventuellement équipée de
+                        avec des renforts en bois ou contreplaqué et qui peut être éventuellement équipée de
                         fermetures et de poignées pour un meilleur transport.<br> Ces caisses peuvent être aménagées avec
                         des calages en mousse ou tout autre matériau. <br>Nous les fabriquons dans
                         nos ateliers à l'unité ou en série.<br> Gain de poids, recyclage, présentation,
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="txt-emballage">
-                <div class="text-center padd">
+                <div class="text-center justif padd">
                     <p>
                         L'emballage Industriel est un maillon important de la chaîne logistique.
                         Son domaine d'application commence dès la fin de la fabrication, avec souvent
@@ -169,10 +169,12 @@
                         Nos prestations sont réalisées en conformité avec le cahier des charges du S.E.I.
                         L'emballage regroupe les différentes fonctions suivantes :
                     </p>
-                    <li>Protéger votre matériel des risques mécaniques et physiques</li>
-                    <li>Mettre en oeuvre les moyens nécessaires à la conservation de votre matériel</li>
-                    <li>Adapter votre matériel aux conditions de manutention et de transport</li>
-                    <li>Informer : Désignation, origine, destination, masse et volume, etc...</li>
+                    <div class="tojustify container">
+                        <li>Protéger votre matériel des risques mécaniques et physiques</li>
+                        <li>Mettre en oeuvre les moyens nécessaires à la conservation de votre matériel</li>
+                        <li>Adapter votre matériel aux conditions de manutention et de transport</li>
+                        <li>Informer : Désignation, origine, destination, masse et volume, etc...</li>
+                    </div>
                 </div>
             </div>
             <div class="conditionnement">
@@ -181,7 +183,7 @@
                 </div>
                 <div class="text-center">
                     <p>Nous pouvons conditionner vos produits : Expédition, conservation, stockage, distribution, etc...<br>
-                        Mise sous film polyane, V.C.I, housses longue durée, étui mousse, blister, etc...
+                        Mise sous film polyane, V.C.I, housse longue durée, étui mousse, blister, etc...
                     </p>
                 </div>
             </div>
@@ -194,24 +196,26 @@
                 </div>
             </div>
             <div class="container text-center padd padd-bottom">
-                <li>Réception et contrôle des marchandises</li>
-                <li>Gestion des livraisons partielles, des manquants</li>
-                <li>Suivi des stocks</li>
-                <li>Conditionnement, colisage, emballage</li>
-                <li>Expédition, transport</li>
-                <li>Traitement NIMP15 (éradication insectes par méthodes de chauffage du bois)</li>
+                <div class="tojustify">
+                    <li>Réception et contrôle des marchandises</li>
+                    <li>Gestion des livraisons partielles, des manquants</li>
+                    <li>Suivi des stocks</li>
+                    <li>Conditionnement, colisage, emballage</li>
+                    <li>Expédition, transport</li>
+                    <li>Traitement NIMP15 (éradication insectes par méthodes de chauffage du bois)</li>
+                </div>
             </div>
         </div>
     </div>
     <footer class="footer-contacts">
         <div class="container bottom_border">
           <div class="social">
-            <a href="https://www.instagram.com/gacec_sas/" class="social-logo">
-              <img src="../images/logo_insta.webp">
+            <a href="https://www.instagram.com/gacec_sas/" target="_blank" class="social-logo">
+              <img src="../images/logo_insta.webp" alt="logo instagram">
             </a>
           </div>
           <div class="lien">
-            <a href="index.html">Accueil</a>
+            <a href="../index.html">Accueil</a>
             <a href="mentions.html">Conditions générales d'utilisation</a>
             <a href="contacts.html">Contacts</a>
           </div>

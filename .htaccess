@@ -1,3 +1,17 @@
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . http://www.%{HTTP_HOST}%1 [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule . http://www.%{HTTP_HOST}%{REQUEST_URI} [NE,R=301,L]
+
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . %1 [R=301,NE,L]
+
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^gacec.fr$
+RewriteRule ^(.*) http://www.gacec.fr/$1 [QSA,L,R=301]
